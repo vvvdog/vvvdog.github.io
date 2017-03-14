@@ -1,0 +1,88 @@
+@import './_varialbes';
+
+main {
+  section {
+    box-sizing: border-box;
+    padding: 1rem;
+
+    h2 {
+      margin-bottom: 2rem;
+      font-weight: normal;
+      font-size: 1.5rem;
+      text-align: center;
+
+      span {
+        display: block;
+        font-size: 1rem;
+        font-family: monospace;
+        color: @c-gray;
+      }
+    }
+
+    &.tech {
+      .col {
+        text-align: center;
+        position: relative;
+        height: 200px;
+        margin-bottom: 2rem;
+
+        span {
+          position: absolute;
+          display: block;
+          width: 100%;
+          left: 0;
+          bottom: 0;
+          text-align: center;
+        }
+
+        img {
+          display: block;
+          max-width: 100%;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translateX(-50%) translateY(-50%);
+
+          &[alt="Elixir"] {
+            width: 100px;
+          }
+
+          &[alt="Ruby"] {
+            width: 80px;
+          }
+
+          &[alt="Python"] {
+            width: 180px;
+          }
+
+          &[alt="HTML5"] {
+            width: 120px;
+          }
+
+          &[alt="Swift"] {
+            width: 180px;
+          }
+        }
+      }
+
+    }
+
+    &.case {}
+
+    &.we {}
+  }
+
+
+  .breakpoint({
+    section {
+      h2 {
+        text-align: left;
+
+        span {
+          display: inline;
+          margin-left: 1rem;
+        }
+      }
+    }
+  })
+}

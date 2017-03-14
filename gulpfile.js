@@ -42,3 +42,12 @@ gulp.task('js', function () {
     }))
     .pipe(gulp.dest('./'))
 })
+
+
+gulp.task('watch', function () {
+  gulp.watch([
+    './source-code/index.html',
+    './source-code/css/*',
+    './source-code/js/*',
+  ], ['html', 'css', 'js'])
+})

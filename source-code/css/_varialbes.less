@@ -12,3 +12,10 @@
 
 // Fonts
 
+
+// Breakpoint
+.breakpoint(@rules) {
+  @media screen and (min-width: 768px) {
+    @rules();
+  }
+}
