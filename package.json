@@ -1,0 +1,22 @@
+{
+  "name": "vvvdog-site",
+  "version": "0.0.2",
+  "description": "The Official Site of vvvdog",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/gulp",
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vvvdog/vvvdog.github.io.git"
+  },
+  "author": "zackmoredev@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vvvdog/vvvdog.github.io/issues"
+  },
+  "homepage": "https://github.com/vvvdog/vvvdog.github.io#readme"
+}
