@@ -2,11 +2,18 @@
 
 header {
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
+  min-height: 80vh;
   background: @c-white;
   color: @c-dark;
   box-sizing: border-box;
   position: relative;
+
+  img {
+    display: block;
+    width: 120px;
+    margin: 60px auto 0;
+  }
 
   strong {
     display: block;
@@ -23,10 +30,15 @@ header {
   .breakpoint({
     padding: 1rem;
 
+    img {
+      width: 180px;
+      margin: 100px auto 0;
+    }
+
     strong {
       width: 80%;
       padding: 0;
-      margin: 50vh auto 0;
+      margin: 20vh auto 0;
       position: static;
       font-size: 2.5rem;
     }
