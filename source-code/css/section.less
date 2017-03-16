@@ -28,7 +28,7 @@ main {
       .col {
         text-align: center;
         position: relative;
-        height: 200px;
+        height: 180px;
         margin-bottom: 2rem;
 
         span {
@@ -97,7 +97,25 @@ main {
       }
     }
 
-    &.we {}
+    &.contact {
+      span {
+        font-size: 2rem;
+        vertical-align: middle;
+        margin-right: .5rem;
+      }
+
+      a {
+        color: @c-dark;
+        text-decoration: none;
+        border-bottom: 1px solid @c-dark;
+        transition: all .4s ease-in-out;
+        opacity: 1;
+
+        &:hover {
+          opacity: .8;
+        }
+      }
+    }
   }
 
 
