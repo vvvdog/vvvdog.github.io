@@ -1,0 +1,29 @@
+@import './_varialbes';
+
+body {
+  font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+  background: @c-white;
+  color: @c-dark-active;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#wrap {
+  width: 100%;
+}
+
+.container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  padding: 1rem;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both
+  }
+}

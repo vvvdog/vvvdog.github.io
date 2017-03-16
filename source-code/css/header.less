@@ -1,0 +1,43 @@
+@import './_varialbes';
+
+header {
+  width: 100vw;
+  background: @c-white;
+  color: @c-dark;
+  box-sizing: border-box;
+  position: relative;
+
+  img {
+    display: block;
+    width: 120px;
+    margin: 60px auto;
+  }
+
+  strong {
+    display: block;
+    font-weight: normal;
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  .breakpoint({
+    padding: 1rem;
+    height: 100vh;
+
+    img {
+      width: 180px;
+      margin: 100px auto 0;
+    }
+
+    strong {
+      width: 80%;
+      padding: 0;
+      margin: 20vh auto 0;
+      position: static;
+      font-size: 2.5rem;
+    }
+  })
+}
+
